@@ -176,5 +176,4 @@ def conversation_gen():
     print("done generated audio at =" , path)
     return send_file(path, mimetype='audio/mpeg')
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000, debug=True)
-
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
