@@ -1,0 +1,12 @@
+langchain
+flask
+flask-cors
+python-dotenv
+pydub
+azure-cognitiveservices-speech
+azure-cognitiveservices-language-textanalytics
+langchain_google_genai
+langchain_chroma
+langchain_core
+bs4
+requests
