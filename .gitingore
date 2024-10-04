@@ -1,4 +1,0 @@
-.env
-./api_env/*
-app.py
-.api_env
