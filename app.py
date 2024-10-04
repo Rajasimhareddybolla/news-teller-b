@@ -33,7 +33,7 @@ def get_preview():
 
 @app.route("/get_daily_news" , methods = ["GET","POST"])
 def get_daily_news():
-    destroy()
+
     print("get_daily_news")
     if request.method == "POST":
         data = request.get_json()
@@ -176,4 +176,4 @@ def conversation_gen():
     print("done generated audio at =" , path)
     return send_file(path, mimetype='audio/mpeg')
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+    app.run(ssl_context=('cert.pem', 'key.pem'), host='0.0.0.0', port=5000)
